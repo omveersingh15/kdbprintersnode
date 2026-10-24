@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>KDB PRINT | High Quality Printing & Binding Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images//logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader">
+        <!-- <div class="print-animation">
+                <div class="paper-roll">
+                    <div class="paper"></div>
+                </div>
+                <div class="printer-body">
+                    <div class="printer-light"></div>
+                </div>
+            </div> -->
+        <div class="logo-image">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <p class="loading-text">Loading KDB Printers...</p>
+        <div class="loading-progress">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo" data-aos="fade-down">
+            <div class="logo-image">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <div class="logo-text">
+              <span class="logo-main">KDB</span>
+              <span class="logo-sub">Printe</span>
+            </div>
+            <div class="logo-dot"></div>
+          </div>
+
+          <ul class="nav-menu">
+            <li>
+              <a href="#home" class="nav-link active"
+                ><i class="fas fa-home"></i> <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="#services" class="nav-link"
+                ><i class="fas fa-cogs"></i> <span>Services</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link"
+                ><i class="fas fa-images"></i> <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#reviews" class="nav-link"
+                ><i class="fas fa-star"></i> <span>Reviews</span></a
+              >
+            </li>
+            <li>
+              <a href="#faq" class="nav-link"
+                ><i class="fas fa-question-circle"></i> <span>FAQ</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link"
+                ><i class="fas fa-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+
+          <div class="nav-cta">
+            <a href="tel:+919835118318" class="phone-btn pulse-animation">
+              <i class="fas fa-phone"></i>
+              <span class="phone-text">+91 9835118318</span>
+            </a>
+            <!-- <a href="#contact" class="btn btn-primary btn-glow">
+                        <i class="fas fa-calculator"></i> Get Quote
+                    </a> -->
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="particles" id="particles-js"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h1 class="hero-title animate-typing">
+              <span class="typing-text">KDB PRINT</span>
+              <span class="typing-cursor">|</span>
+            </h1>
+
+            <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+              Skill India Books Printing, Hard Binding, Thesis & Project Expert
+            </h2>
+
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="500">
+              Established In 2023, at Ranchi (Jharkhand), we are known as the
+              popular binding service provider. We offer Leather Book Binding,
+              Rexine Book Binding, Project Reports, and high-quality printing
+              solutions.
+            </p>
+
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="900">
+              <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+                <i class="fas fa-envelope"></i> Get Quote
+                <div class="btn-shine"></div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="hero-form-wrapper"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <div class="hero-form-card">
+              <div class="form-card-header">
+                <h3><i class="fas fa-bolt"></i> Quick Inquiry</h3>
+                <p>Get a callback in 15 mins</p>
+              </div>
+              <form class="hero-contact-form" id="heroContactForm" novalidate>
+                <div class="form-group-sm">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    minlength="2"
+                    pattern="[A-Za-z\s]+"
+                    title="Name must contain letters only"
+                    oninput="
+                      this.value = this.value.replace(/[^A-Za-z\s]/g, '')
+                    "
+                  />
+                </div>
+
+                <div class="form-group-sm">
+                  <i class="fas fa-phone"></i>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Mobile Number"
+                    required
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    inputmode="numeric"
+                    title="Please enter exactly 10 digit mobile number"
+                    oninput="
+                      this.value = this.value
+                        .replace(/[^0-9]/g, '')
+                        .slice(0, 10)
+                    "
+                  />
+                </div>
+
+                <!-- Service -->
+                <div class="form-group-sm">
+                  <i class="fas fa-file-alt"></i>
+                  <select name="service" required>
+                    <option value="" disabled selected>Service Needed</option>
+                    <option value="Thesis/Project Binding">
+                      Thesis/Project Binding
+                    </option>
+                    <option value="Book Printing">Book Printing</option>
+                    <option value="Bulk Printing">Bulk Printing</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Submit -->
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block btn-pulse"
+                >
+                  Request Callback
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <a href="#services" class="scroll-down">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-badge">Our Services</div>
+          <h2 class="section-title">Premium Printing Solutions</h2>
+          <p class="section-subtitle">
+            Complete printing solutions for academic, business, and personal
+            projects
+          </p>
+          <div class="section-divider">
+            <div class="divider-line"></div>
+            <i class="fas fa-print"></i>
+            <div class="divider-line"></div>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon">
+                  <i class="fas fa-edit"></i>
+                  <div class="icon-bg"></div>
+                </div>
+                <h3>Content Creation & Book Printing</h3>
+                <p>
+                  We offer professional content writing and high-quality book
+                  printing including thesis, projects, spiral binding, hard &
+                  soft binding, and lamination.
+                </p>
+                <div class="service-hover-indicator">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="service-back">
+                <h3>Content Creation</h3>
+                <ul>
+                  <li>Thesis & Dissertation</li>
+                  <li>Academic Journals</li>
+                  <li>Research Papers</li>
+                  <li>Book Writing</li>
+                </ul>
+                <a href="#contact" class="btn-service">
+                  <i class="fas fa-plus"></i> Learn More
+                </a>
+              </div>
+            </div>
+            <div class="service-card-bg"></div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon">
+                  <i class="fas fa-paint-brush"></i>
+                  <div class="icon-bg"></div>
+                </div>
+                <h3>Creative Design & Layout</h3>
+                <p>
+                  Give your books a professional look with our customized
+                  layouts and attractive designs.
+                </p>
+                <div class="service-hover-indicator">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="service-back">
+                <h3>Creative Design</h3>
+                <ul>
+                  <li>Cover Design</li>
+                  <li>Layout & Typesetting</li>
+                  <li>Illustrations</li>
+                  <li>Branding</li>
+                </ul>
+                <a href="#quote" class="btn-service">
+                  <i class="fas fa-plus"></i> Learn More
+                </a>
+              </div>
+            </div>
+            <div class="service-card-bg"></div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon">
+                  <i class="fas fa-book"></i>
+                  <div class="icon-bg"></div>
+                </div>
+                <h3>Binding Solutions</h3>
+                <p>
+                  From spiral to hard & soft binding, we ensure durability and
+                  professional finishing.
+                </p>
+                <div class="service-hover-indicator">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="service-back">
+                <h3>Binding Solutions</h3>
+                <ul>
+                  <li>Hard Cover Binding</li>
+                  <li>Spiral Binding</li>
+                  <li>Perfect Binding</li>
+                  <li>Saddle Stitch</li>
+                </ul>
+                <a href="#quote" class="btn-service">
+                  <i class="fas fa-plus"></i> Learn More
+                </a>
+              </div>
+            </div>
+            <div class="service-card-bg"></div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon">
+                  <i class="fas fa-layer-group"></i>
+                  <div class="icon-bg"></div>
+                </div>
+                <h3>Lamination & Finishing</h3>
+                <p>
+                  Protect your valuable work with our premium lamination and
+                  finishing services.
+                </p>
+                <div class="service-hover-indicator">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="service-back">
+                <h3>Lamination</h3>
+                <ul>
+                  <li>Gloss & Matte Finish</li>
+                  <li>UV Coating</li>
+                  <li>Spot UV</li>
+                  <li>Foil Stamping</li>
+                </ul>
+                <a href="#quote" class="btn-service">
+                  <i class="fas fa-plus"></i> Learn More
+                </a>
+              </div>
+            </div>
+            <div class="service-card-bg"></div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div class="icon-bg"></div>
+                </div>
+                <h3>Thesis Drafting & Editing</h3>
+                <p>
+                  Expert assistance in thesis drafting, formatting, and editing
+                  to meet university standards.
+                </p>
+                <div class="service-hover-indicator">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="service-back">
+                <h3>Thesis Services</h3>
+                <ul>
+                  <li>Thesis Formatting</li>
+                  <li>Proofreading</li>
+                  <li>Citation Management</li>
+                  <li>Plagiarism Check</li>
+                </ul>
+                <a href="#quote" class="btn-service">
+                  <i class="fas fa-plus"></i> Learn More
+                </a>
+              </div>
+            </div>
+            <div class="service-card-bg"></div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon">
+                  <i class="fas fa-print"></i>
+                  <div class="icon-bg"></div>
+                </div>
+                <h3>Project & Report Printing</h3>
+                <p>
+                  High-quality project reports and presentations printing for
+                  students and professionals.
+                </p>
+                <div class="service-hover-indicator">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="service-back">
+                <h3>Project Printing</h3>
+                <ul>
+                  <li>Color & B/W Printing</li>
+                  <li>Bulk Printing</li>
+                  <li>Same-Day Service</li>
+                  <li>Digital & Offset</li>
+                </ul>
+                <a href="#quote" class="btn-service">
+                  <i class="fas fa-plus"></i> Learn More
+                </a>
+              </div>
+            </div>
+            <div class="service-card-bg"></div>
+          </div>
+        </div>
+
+        <div class="services-cta" data-aos="fade-up">
+          <div class="cta-content">
+            <h3>Need Custom Printing Solutions?</h3>
+            <p>
+              Contact us for personalized printing packages and bulk discounts
+            </p>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-glow">
+            <i class="fas fa-envelope"></i> Request Custom Quote
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+      <div class="container">
+        <div class="section-header center-header" data-aos="fade-up">
+          <div class="section-badge">Trusted By</div>
+          <h3 class="section-title-sm">Our Partners & Clients</h3>
+        </div>
+
+        <div class="partners-slider">
+          <div class="slide-track">
+            <div class="partner-slide">
+              <img src="images/logo/Picture1.jpg" alt="Logo1" />
+            </div>
+
+            <div class="partner-slide">
+              <img src="images/logo/Picture2.jpg" alt="Logo7" />
+            </div>
+
+            <div class="partner-slide">
+              <img src="images/logo/Picture3.jpg" alt="Logo3" />
+            </div>
+
+            <div class="partner-slide">
+              <img src="images/logo/Picture4.png" alt="Logo4" />
+            </div>
+
+            <div class="partner-slide">
+              <img src="images/logo/Picture5.png" alt="Logo5" />
+            </div>
+
+            <div class="partner-slide">
+              <img src="images/logo/Picture6.jpg" alt="Logo6" />
+            </div>
+
+            <div class="partner-slide">
+              <img src="images/logo/Picture7.png" alt="Logo7" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture8.jpg" alt="Logo8" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture9.png" alt="Logo9" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture10.png" alt="Logo10" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture11.png" alt="Logo11" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture12.png" alt="Logo12" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture13.jpg" alt="Logo13" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture14.jpg" alt="Logo14" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture15.png" alt="Logo15" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture16.jpg" alt="Logo16" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture17.jpg" alt="Logo17" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture18.jpg" alt="Logo18" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture19.jpg" alt="Logo19" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture20.jpg" alt="Logo20" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture21.png" alt="Logo21" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture22.jpg" alt="Logo22" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture23.jpg" alt="Logo23" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture24.jpg" alt="Logo24" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture25.jpg" alt="Logo25" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture26.jpg" alt="Logo26" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture27.jpg" alt="Logo27" />
+            </div>
+            <div class="partner-slide">
+              <img src="images/logo/Picture28.jpg" alt="Logo28" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-badge">Our Work</div>
+          <h2 class="section-title">Printing Portfolio</h2>
+          <p class="section-subtitle">
+            Browse our collection of professionally printed materials
+          </p>
+        </div>
+
+        <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">
+            <span>All Work</span>
+          </button>
+          <button class="filter-btn" data-filter="books">
+            <span>Books</span>
+          </button>
+          <button class="filter-btn" data-filter="thesis">
+            <span>Thesis</span>
+          </button>
+          <button class="filter-btn" data-filter="design">
+            <span>Design</span>
+          </button>
+          <button class="filter-btn" data-filter="binding">
+            <span>Binding</span>
+          </button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Portfolio items will be loaded via JavaScript -->
+        </div>
+
+        <div class="portfolio-cta" data-aos="fade-up">
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-images"></i> View Full Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="reviews">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-badge">Client Stories</div>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">
+            Real feedback from students, authors, and businesses
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="review-text">
+              "I got my PhD thesis printed and hardbound from KDB Print. The
+              golden embossing on the cover was perfect, and they delivered it
+              within 24 hours. Highly recommended for students!"
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <span>RK</span>
+              </div>
+              <div class="reviewer-details">
+                <h4>Rahul Kumar</h4>
+                <span>Research Scholar, BIT Mesra</span>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="review-text">
+              "Excellent quality for my self-published poetry book. The paper
+              stock selection advice was very helpful. The print clarity is
+              amazing, just like I imagined."
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <span>AS</span>
+              </div>
+              <div class="reviewer-details">
+                <h4>Anjali Singh</h4>
+                <span>Author</span>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="review-text">
+              "We rely on KDB for all our corporate training manuals and
+              brochures. Their bulk pricing is competitive, and they always meet
+              our tight deadlines."
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <span>VS</span>
+              </div>
+              <div class="reviewer-details">
+                <h4>Vikram Sharma</h4>
+                <span>Business Owner, Ranchi</span>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-badge">Common Questions</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about our printing services
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+              <h3>What file formats do you accept for printing?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We prefer PDF files for the best print accuracy. However, we
+                also accept Word documents (DOCX), high-resolution images (JPG,
+                PNG), and design files (CDR, AI, PSD). For Thesis/Dissertations,
+                PDF is mandatory to ensure formatting stays intact.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+              <h3>How long does it take to print and bind a thesis?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                For standard urgent orders, we can complete printing and hard
+                binding within 24 hours. Normal delivery takes 2-3 days. Please
+                call us for express service availability depending on our
+                current workload.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question">
+              <h3>Do you offer delivery services outside Ranchi?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we ship printed materials across India via reliable courier
+                partners. Shipping charges apply based on weight and location.
+                Local delivery within Ranchi is also available.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question">
+              <h3>Is there a minimum order quantity?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No, there is no minimum order quantity for digital printing. You
+                can print a single copy of a book or report. However, offset
+                printing for large volumes (500+ copies) offers significantly
+                lower cost per unit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-badge">Contact Us</div>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Ready to start your printing project? Contact us today!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="info-card floating">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="icon-pulse"></div>
+              </div>
+              <h4>Visit Our Studio</h4>
+              <p>Rajdhani Manya Tower, Piska More</p>
+              <p>Ranchi-834005, Jharkhand, India</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Rajdhani+Manya+Tower+Piska+More+Ranchi"
+                target="_blank"
+                class="info-link"
+              >
+                <i class="fas fa-directions"></i> Get Directions
+              </a>
+            </div>
+
+            <div class="info-card floating">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+                <div class="icon-pulse"></div>
+              </div>
+              <h4>Call Us</h4>
+              <p>+91 9835118318</p>
+              <!-- <p>+91 9431515444</p> -->
+              <p>Mon–Sat: 9:00 AM – 07:00 PM</p>
+              <a href="tel:+919835118318" class="info-link">
+                <i class="fas fa-phone-alt"></i> Call Now
+              </a>
+            </div>
+
+            <div class="info-card floating">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+                <div class="icon-pulse"></div>
+              </div>
+              <h4>Email Us</h4>
+              <p>anil.kknjs@gmail.com</p>
+              <a href="mailto:anil.kknjs@gmail.com" class="info-link">
+                <i class="fas fa-paper-plane"></i> Send Email
+              </a>
+            </div>
+
+            <div class="info-card floating">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+                <div class="icon-pulse"></div>
+              </div>
+              <h4>Business Hours</h4>
+              <p>Mon–Sat: 9:00 AM – 07:00 PM</p>
+              <a href="#" class="info-link">
+                <i class="fas fa-calendar-alt"></i> Book Appointment
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            novalidate
+          >
+            <div class="form-header">
+              <h3><i class="fas fa-comment-dots"></i> Send Us a Message</h3>
+              <p>We'll respond within 24 hours</p>
+            </div>
+
+            <!-- Name (TEXT ONLY) -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                minlength="2"
+                pattern="[A-Za-z\s]+"
+                title="Name must contain letters only (no digits)"
+                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
+              />
+              <div class="input-icon">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Please enter a valid email address"
+              />
+              <div class="input-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+
+            <!-- Phone (10 digits only) -->
+            <div class="form-group">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+                maxlength="10"
+                pattern="[0-9]{10}"
+                inputmode="numeric"
+                title="Please enter exactly 10 digits"
+                oninput="
+                  this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)
+                "
+              />
+              <div class="input-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+            </div>
+
+            <!-- Service -->
+            <div class="form-group">
+              <select name="service" required>
+                <option value="" disabled selected>
+                  Service Interested In
+                </option>
+                <option value="Thesis Printing">Thesis Printing</option>
+                <option value="Book Publishing">Book Publishing</option>
+                <option value="Business Reports">Business Reports</option>
+                <option value="Design Services">Design Services</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="input-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Tell us about your project..."
+                rows="4"
+                required
+                minlength="5"
+                title="Message must be at least 5 characters"
+              ></textarea>
+              <div class="input-icon">
+                <i class="fas fa-edit"></i>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-glow">
+              <i class="fas fa-paper-plane"></i> Send Message
+              <div class="btn-shine"></div>
+            </button>
+
+            <div class="form-notice">
+              <i class="fas fa-shield-alt"></i>
+              <span>Your information is secure and will not be shared</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <div class="logo-image">
+                <img src="./images/logo.png" alt="logo" />
+              </div>
+              <div class="footer-logo-text">
+                <span>KDB</span>
+                <span>PRINT</span>
+              </div>
+            </div>
+            <p>
+              Professional content creation and premium printing services for
+              academic, business, and personal projects.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+                <div class="social-tooltip">Facebook</div>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+                <div class="social-tooltip">Twitter</div>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <div class="social-tooltip">Instagram</div>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+                <div class="social-tooltip">LinkedIn</div>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+                <div class="social-tooltip">YouTube</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fas fa-chevron-right"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio"
+                  ><i class="fas fa-chevron-right"></i> Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><i class="fas fa-chevron-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Content Creation</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Creative Design</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Binding Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Lamination</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Thesis Drafting</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span
+                  >Rajdhani Manya Tower, Piska More, Ranchi-834005,
+                  Jharkhand</span
+                >
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <span>+91 9835118318</span>
+                  <!-- <span>+91 9431515444</span> -->
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>anil.kknjs@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 KDB PRINT. All rights reserved.</p>
+          <!-- <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Sitemap</a>
+                </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+      <div class="back-pulse"></div>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+      <div class="toast-content">
+        <i class="fas fa-check-circle"></i>
+        <span class="toast-message">Message sent successfully!</span>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
